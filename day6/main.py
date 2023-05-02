@@ -14,13 +14,13 @@ if __name__ == "__main__":
         # After  4 days: 6,0,6,4,5,6,7,8,8        - [1, 0, 0, 0, 1, 1, 3, 1, 2] shift & add +2 day6,8
         # After  5 days: 5,6,5,3,4,5,6,7,7,8      - ...
         # After  6 days: 4,5,4,2,3,4,5,6,6,7      - ...
-        # After  7 days: 3,4,3,1,2,3,4,5,5,6      
+        # After  7 days: 3,4,3,1,2,3,4,5,5,6
 
         reset_to = 6
         default_new_timer = 8
         days_cycle = 256
 
-        born_list = [0] * 9 # index - day, value - count of fishes
+        born_list = [0] * 9  # index - day, value - count of fishes
         days_count = 0
 
         for value in values:

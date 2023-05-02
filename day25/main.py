@@ -6,11 +6,13 @@ char_south = "v"
 char_east = ">"
 char_slot = "."
 
+
 def split_chars(word: str) -> List[str]:
     result = []
     for ch in word:
         result.append(ch)
     return result
+
 
 def move_east(grid: List[List[str]]) -> bool:
     is_moved = False
@@ -33,6 +35,7 @@ def move_east(grid: List[List[str]]) -> bool:
             row[col] = char_slot
 
     return is_moved
+
 
 def move_south(grid: List[List[str]]) -> bool:
     is_moved = False
@@ -70,7 +73,6 @@ if __name__ == "__main__":
     def do_right_down(grid):
         move_east(grid)
         move_south(grid)
-
 
     do_right_down(grid)
     do_right_down(grid)
